@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView_running_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Running Total"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandableListView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="865dp"
+        android:layout_marginBottom="110dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pull data"
+        android:id="@+id/button_datapull"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="81dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE DATA"
+        android:id="@+id/button_deleteData"
+        android:layout_alignBottom="@+id/button_datapull"
+        android:layout_toEndOf="@+id/button_datapull" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_deleteData"
+        android:inputType="number"
+        android:layout_below="@+id/textView_running_total"
+        android:hint="Enter in ID to Delete"
+        android:id="@+id/edtextshow" />
+
+</RelativeLayout>
