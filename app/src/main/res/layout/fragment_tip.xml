@@ -9,43 +9,44 @@
 
     <EditText
         android:id="@+id/editText_bill_amount"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:hint="Bill Amount"
         android:maxLength="9"
-        android:layout_gravity="right"
+        android:layout_gravity="end"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/editText_tip_percent"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Tip Percent"
+        android:hint="@string/tip_percent"
         android:maxLength="3"
-        android:layout_gravity="right"
+        android:layout_gravity="end"
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/editText_num_of_people"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:maxLength="3"
-        android:hint="# of people"
-        android:layout_gravity="right"
+        android:hint="@string/number_of_guest"
+        android:layout_gravity="end"
         android:layout_below="@+id/textView4"
         android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save to Running total"
+        android:text="@string/save_total"
         android:id="@+id/btn_save_to_data"
         android:layout_gravity="center"
+        android:background="#FF4081"
         android:layout_marginTop="39dp"
         android:layout_below="@+id/editText_num_of_people"
         android:layout_centerHorizontal="true" />
@@ -55,7 +56,7 @@
         android:layout_height="wrap_content"
         android:ellipsize="none"
         android:scrollHorizontally="false"
-        android:text="Bill "
+        android:text="@string/bill_amount"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_toStartOf="@+id/btn_save_to_data"
@@ -64,7 +65,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tip Percent %"
+        android:text="@string/tip_percent"
         android:id="@+id/textView2"
         android:layout_below="@+id/editText_bill_amount"
         android:layout_alignStart="@+id/textView" />
@@ -72,7 +73,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tip Amount"
+        android:text="@string/tip_amount"
         android:id="@+id/tv_tip_amount"
         android:layout_alignTop="@+id/editText_tip_percent"
         android:layout_alignStart="@+id/tv_total" />
@@ -80,7 +81,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number of guess"
+        android:text="@string/number_of_guest"
         android:id="@+id/textView4"
         android:layout_marginTop="25dp"
         android:layout_below="@+id/tv_tip_amount"
@@ -89,7 +90,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total"
+        android:text="@string/total"
         android:id="@+id/textView5"
         android:layout_below="@+id/textView"
         android:layout_alignEnd="@+id/btn_save_to_data" />

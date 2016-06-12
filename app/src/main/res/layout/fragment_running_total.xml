@@ -4,15 +4,6 @@
     android:layout_height="match_parent"
     >
 
-    <TextView
-        android:id="@+id/textView_running_total"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="Running Total"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
     <ExpandableListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +16,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pull data"
+        android:text="@string/tip_history"
+        android:background="#FF4081"
+        android:textColor="#212121"
         android:id="@+id/button_datapull"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
@@ -34,18 +27,22 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DELETE DATA"
+        android:text="@string/delete_data"
+        android:background="#FF4081"
+        android:textColor="#212121"
         android:id="@+id/button_deleteData"
-        android:layout_alignBottom="@+id/button_datapull"
-        android:layout_toEndOf="@+id/button_datapull" />
+        android:layout_alignTop="@+id/button_datapull"
+        android:layout_toEndOf="@+id/button_datapull"
+        android:layout_marginStart="17dp" />
 
     <EditText
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button_deleteData"
         android:inputType="number"
-        android:layout_below="@+id/textView_running_total"
-        android:hint="Enter in ID to Delete"
-        android:id="@+id/edtextshow" />
+        android:hint="@string/enter_delete"
+        android:id="@+id/edtextshow"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
